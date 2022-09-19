@@ -1,6 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+/// Rank
+///
+/// 0 - JK
+/// 1 - A
+/// 2 - 2
+/// 3 - 3
+/// 4 - 4
+/// 5 - 5
+/// 6 - 6
+/// 7 - 7
+/// 8 - 8
+/// 9 - 9
+/// 10 - 10
+/// 11 - J
+/// 12 - Q
+/// 13 - K
+
+/// Suit
+///
+/// 0 - Spades
+/// 1 - Hearts
+/// 2 - Diamonds
+/// 3 - Clubs
+
 class PlayingCard {
   final int _rank;
   final int _suit;
