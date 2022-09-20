@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:sueca/models/deck.dart';
-import 'package:sueca/models/playing_card.dart.dart';
 import 'package:sueca/models/sueca_deck.dart';
 import 'package:sueca/utilities/print.dart';
 import 'firebase_options.dart';
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sueca',
+      title: 'Suekelson',
       theme: ThemeData(
         primarySwatch: Colors.teal,
         brightness: Brightness.dark,
@@ -29,6 +28,8 @@ class MyApp extends StatelessWidget {
             child: const Text('Sueca'),
             onPressed: () {
               final Deck deck = SuecaDeck();
+              print(deck.takeCard());
+              print(deck);
             },
           ),
         ),

@@ -12,7 +12,7 @@ class SuecaDeck extends Deck {
       for (int rank in SuecaDeck.RANKS)
         for (int suit in PlayingCard.SUITS) PlayingCard(rank, suit)
     ]);
-    cards.shuffle();
-    print(cards);
+    shuffle();
+    print(cards, prefix: 'Reset');
   }
 }

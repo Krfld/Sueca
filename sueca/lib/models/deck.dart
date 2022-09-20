@@ -8,4 +8,11 @@ abstract class Deck {
   Deck() {
     reset();
   }
+
+  void shuffle() => cards.shuffle();
+
+  PlayingCard takeCard() => cards.removeLast();
+
+  @override
+  String toString() => cards.toString();
 }
