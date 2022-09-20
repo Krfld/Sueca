@@ -17,9 +17,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const Scaffold(
+      home: Scaffold(
         body: Center(
-          child: Text('Sueca'),
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('Sueca'),
+          ),
         ),
       ),
     );

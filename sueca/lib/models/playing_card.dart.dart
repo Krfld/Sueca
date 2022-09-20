@@ -26,18 +26,18 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 /// 3 - Clubs ♣
 
 class PlayingCard {
-  final int _rankId;
-  final int _suitId;
+  static const List<int> RANKS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  static const List<int> SUITS = [0, 1, 2, 3];
 
-  int get rankId => _rankId;
-  int get suitId => _suitId;
+  final int rankId;
+  final int suitId;
 
-  PlayingCard(this._rankId, this._suitId);
+  PlayingCard(this.rankId, this.suitId);
 
   /// Rank
 
   String get rank {
-    switch (_rankId) {
+    switch (rankId) {
       case 0:
         return 'JK';
       case 1:
@@ -49,7 +49,7 @@ class PlayingCard {
       case 13:
         return 'K';
       default:
-        return _rankId.toString();
+        return rankId.toString();
     }
   }
 
