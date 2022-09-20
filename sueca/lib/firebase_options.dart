@@ -53,11 +53,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDYhwLnURvUwLImS2IoWkFuBuSdjMUjOyo',
-    appId: '1:205066850713:android:ce1d2bad517e3d81254308',
-    messagingSenderId: '205066850713',
-    projectId: 'krfld-projects',
-    databaseURL: 'https://krfld-projects-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'krfld-projects.appspot.com',
+    apiKey: 'AIzaSyCEDmsGGqGK9QmeF6l0ppKxVXMAzFHz2Qc',
+    appId: '1:280779811553:android:f85a1eaa381ec68d4de5a0',
+    messagingSenderId: '280779811553',
+    projectId: 'sueca-krfld',
+    storageBucket: 'sueca-krfld.appspot.com',
   );
 }

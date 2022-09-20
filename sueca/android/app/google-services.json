@@ -1,63 +1,33 @@
 {
   "project_info": {
-    "project_number": "205066850713",
-    "firebase_url": "https://krfld-projects-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "krfld-projects",
-    "storage_bucket": "krfld-projects.appspot.com"
+    "project_number": "280779811553",
+    "project_id": "sueca-krfld",
+    "storage_bucket": "sueca-krfld.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:205066850713:android:ce1d2bad517e3d81254308",
+        "mobilesdk_app_id": "1:280779811553:android:f85a1eaa381ec68d4de5a0",
         "android_client_info": {
           "package_name": "com.krfld.sueca"
         }
       },
       "oauth_client": [
         {
-          "client_id": "205066850713-pbmmdatevolvjobjf2ht6qi20fousqmg.apps.googleusercontent.com",
+          "client_id": "280779811553-4sf6ptv40beo6orgoe3m008jc2e85vg0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDYhwLnURvUwLImS2IoWkFuBuSdjMUjOyo"
+          "current_key": "AIzaSyCEDmsGGqGK9QmeF6l0ppKxVXMAzFHz2Qc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "205066850713-pbmmdatevolvjobjf2ht6qi20fousqmg.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:205066850713:android:0b3c3f96a0cc751b254308",
-        "android_client_info": {
-          "package_name": "com.krfld.to_buy"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "205066850713-pbmmdatevolvjobjf2ht6qi20fousqmg.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDYhwLnURvUwLImS2IoWkFuBuSdjMUjOyo"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "205066850713-pbmmdatevolvjobjf2ht6qi20fousqmg.apps.googleusercontent.com",
+              "client_id": "280779811553-4sf6ptv40beo6orgoe3m008jc2e85vg0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
