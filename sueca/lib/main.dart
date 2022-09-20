@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:sueca/models/deck.dart';
+import 'package:sueca/models/playing_card.dart.dart';
+import 'package:sueca/models/sueca_deck.dart';
+import 'package:sueca/utilities/print.dart';
 import 'firebase_options.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
@@ -16,12 +21,15 @@ class MyApp extends StatelessWidget {
       title: 'Sueca',
       theme: ThemeData(
         primarySwatch: Colors.teal,
+        brightness: Brightness.dark,
       ),
       home: Scaffold(
         body: Center(
           child: ElevatedButton(
-            onPressed: () {},
             child: const Text('Sueca'),
+            onPressed: () {
+              final Deck deck = SuecaDeck();
+            },
           ),
         ),
       ),
