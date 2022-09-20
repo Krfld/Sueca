@@ -26,15 +26,18 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 /// 3 - Clubs ♣
 
 class PlayingCard {
-  final int _rank;
-  final int _suit;
+  final int _rankId;
+  final int _suitId;
 
-  PlayingCard(this._rank, this._suit);
+  int get rankId => _rankId;
+  int get suitId => _suitId;
+
+  PlayingCard(this._rankId, this._suitId);
 
   /// Rank
 
   String get rank {
-    switch (_rank) {
+    switch (_rankId) {
       case 0:
         return 'JK';
       case 1:
@@ -46,13 +49,13 @@ class PlayingCard {
       case 13:
         return 'K';
       default:
-        return _rank.toString();
+        return _rankId.toString();
     }
   }
 
   /// Suit
 
-  final Map<int, Icon> _suits = {
+  final Map<int, Icon> _suitIcons = {
     0: const Icon(MdiIcons.cardsSpade),
     1: const Icon(MdiIcons.cardsHeart),
     2: const Icon(MdiIcons.cardsDiamond),
@@ -66,19 +69,16 @@ class PlayingCard {
     3: '♣',
   };
 
-  Icon get suit => _suits[_suit]!;
-  String get suitSymbol => _suitSymbols[_suit]!;
-
-  /// Color
-
-  final Map<int, Color> _colors = {
+  final Map<int, Color> _suitColors = {
     0: Colors.black,
     1: Colors.red,
     2: Colors.red,
     3: Colors.black,
   };
 
-  Color get color => _colors[_suit]!;
+  Icon get suitIcon => _suitIcons[suitId]!;
+  String get suitSymbol => _suitSymbols[suitId]!;
+  Color get suitColor => _suitColors[suitId]!;
 
   /// Overrides
 
@@ -86,7 +86,8 @@ class PlayingCard {
   String toString() => '$rank$suitSymbol';
 
   @override
-  bool operator ==(dynamic other) => rank == other.rank && suit == other.suit;
+  bool operator ==(dynamic other) =>
+      rankId == other.rankId && suitId == other.suitId;
 
   @override
   int get hashCode => toString().hashCode;
