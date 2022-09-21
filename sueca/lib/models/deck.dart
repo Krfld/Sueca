@@ -4,6 +4,7 @@ abstract class Deck {
   final List<PlayingCard> cards = [];
 
   void reset();
+  int cardValue(PlayingCard card);
 
   Deck() {
     reset();

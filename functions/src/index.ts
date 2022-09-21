@@ -1,9 +1,24 @@
 import * as functions from "firebase-functions";
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
+export const testOnCall = functions.https
+	.onCall((data, context) => {
+		console.log(data)
 
-export const helloWorld = functions.https.onRequest((request, response) => {
-	functions.logger.info("Hello logs!", { structuredData: true });
-	response.send("Hello from Firebase!");
-});
+		return null
+	})
+
+export const testOnUpdate = functions.firestore
+	.document('rooms/{id}')
+	.onUpdate((change, context) => {
+		console.log(change.after.data())
+
+		return null
+	})
+
+export const onRegister = functions.auth
+	.user()
+	.onCreate((user, context) => {
+		console.log(user)
+
+		return null
+	})
