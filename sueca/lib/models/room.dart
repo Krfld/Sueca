@@ -9,13 +9,13 @@ class Room {
   final bool started;
   final Map<String, int?> players;
 
-  Room(
-    this.id,
-    this.name,
-    this.timestamp,
-    this.host,
-    this.ready,
-    this.started,
-    this.players,
-  );
+  Room({
+    required this.id,
+    required this.name,
+    required this.timestamp,
+    required this.host,
+    required this.ready,
+    required this.started,
+    required this.players,
+  });
 }
