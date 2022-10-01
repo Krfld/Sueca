@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         brightness: Brightness.dark,
       ),
-      home: Home(),
+      home: const Home(),
     );
   }
 }
